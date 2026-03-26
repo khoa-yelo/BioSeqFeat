@@ -1,0 +1,11 @@
+name: bioseqfeat
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10
+  - numpy
+  - biopython
+  - scipy
+  - pytest
+  - pip
