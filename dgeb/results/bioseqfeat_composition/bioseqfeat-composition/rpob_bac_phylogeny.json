@@ -1,0 +1,59 @@
+{
+  "dgeb_version": "0.2.0",
+  "task": {
+    "id": "rpob_bac_phylogeny",
+    "display_name": "RpoB Bacterial Phylogeny",
+    "description": "Evaluate on RpoB phylogeny distance correlation task for Bacterial sequences.",
+    "modality": "protein",
+    "type": "eds",
+    "datasets": [
+      {
+        "path": "tattabio/rpob_bac_phylogeny_sequences",
+        "revision": "b833ef8d8d873ea5387540562873f41d073d3e03"
+      },
+      {
+        "path": "tattabio/rpob_bac_phylogeny_distances",
+        "revision": "0594e1501ac9fd0e3de49257b8ec318c2a0ea6f7"
+      }
+    ],
+    "primary_metric_id": "top_corr"
+  },
+  "model": {
+    "hf_name": "bioseqfeat-composition",
+    "num_layers": 1,
+    "num_params": 0,
+    "embed_dim": 470
+  },
+  "results": [
+    {
+      "layer_number": 0,
+      "layer_display_name": "0",
+      "metrics": [
+        {
+          "id": "cos_sim",
+          "display_name": "cos_sim",
+          "description": null,
+          "value": 0.30461336865137323
+        },
+        {
+          "id": "manhattan",
+          "display_name": "manhattan",
+          "description": null,
+          "value": 0.38919542773489535
+        },
+        {
+          "id": "euclidean",
+          "display_name": "euclidean",
+          "description": null,
+          "value": 0.3073236643645236
+        },
+        {
+          "id": "top_corr",
+          "display_name": "top_corr",
+          "description": null,
+          "value": 0.38919542773489535
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/scratch/users/khoang99/repos/BioSeqFeat/dgeb/bioseqfeat_mmseqs.py", line 34, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'

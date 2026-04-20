@@ -1,0 +1,19 @@
+
+=== Running facebook/esm2_t33_650M_UR50D ===
+─────────────────────────────── Selected Tasks  ────────────────────────────────
+    - RpoB Bacterial Phylogeny, eds
+    - RpoB Archaeal Phylogeny, eds
+    - FeFeHydrogenase Phylogeny, eds
+    - E.coli Operonic Pair, pair_classification
+    - Cyano Operonic Pair, pair_classification
+    - Vibrio Operonic Pair, pair_classification
+    - Arch Retrieval, retrieval
+    - Euk Retrieval, retrieval
+    - EC Classification, classification
+    - Convergent Enzymes Classification, classification
+    - MIBiG Classification, classification
+    - MopB Clustering, clustering
+    - BacArch BiGene, bigene_mining
+    - ModAC Paralogy BiGene, bigene_mining
+
+

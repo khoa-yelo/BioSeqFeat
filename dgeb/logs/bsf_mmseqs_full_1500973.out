@@ -1,0 +1,23 @@
+[Sat Mar 28 19:03:15 PDT 2026] Sampling 1000 anchors...
+Loaded 89307 sequences from db/bacteria_anchors.fasta
+Sampled 1000 sequences (seed=42)
+Written to db/bacteria_anchors_1k.fasta
+[Sat Mar 28 19:03:16 PDT 2026] Anchor set: 1000 representative sequences
+[Sat Mar 28 19:03:16 PDT 2026] Running MMseqs2-only evaluation...
+─────────────────────────────── Selected Tasks  ────────────────────────────────
+    - RpoB Bacterial Phylogeny, eds
+    - RpoB Archaeal Phylogeny, eds
+    - FeFeHydrogenase Phylogeny, eds
+    - E.coli Operonic Pair, pair_classification
+    - Cyano Operonic Pair, pair_classification
+    - Vibrio Operonic Pair, pair_classification
+    - Arch Retrieval, retrieval
+    - Euk Retrieval, retrieval
+    - EC Classification, classification
+    - Convergent Enzymes Classification, classification
+    - MIBiG Classification, classification
+    - MopB Clustering, clustering
+    - BacArch BiGene, bigene_mining
+    - ModAC Paralogy BiGene, bigene_mining
+
+

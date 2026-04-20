@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/scratch/users/khoang99/repos/BioSeqFeat/dgeb/bioseqfeat_dna_nt.py", line 109, in <module>
+    model = NucleotideTransformerV2()
+  File "/scratch/users/khoang99/repos/BioSeqFeat/dgeb/bioseqfeat_dna_nt.py", line 57, in __init__
+    super().__init__(model_name=model_name, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 65, in __init__
+    self.encoder = self._load_model(model_name)
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/scratch/users/khoang99/repos/BioSeqFeat/dgeb/bioseqfeat_dna_nt.py", line 60, in _load_model
+    model = AutoModel.from_pretrained(model_name, trust_remote_code=True)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/models/auto/auto_factory.py", line 381, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/modeling_utils.py", line 4087, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/models/esm/modeling_esm.py", line 595, in __init__
+    self.encoder = EsmEncoder(config)
+                   ~~~~~~~~~~^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/models/esm/modeling_esm.py", line 489, in __init__
+    self.layer = nn.ModuleList([EsmLayer(config) for _ in range(config.num_hidden_layers)])
+                                ~~~~~~~~^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/models/esm/modeling_esm.py", line 435, in __init__
+    self.attention = EsmAttention(config)
+                     ~~~~~~~~~~~~^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/models/esm/modeling_esm.py", line 381, in __init__
+    self.self = EsmSelfAttention(config, layer_idx=layer_idx, is_cross_attention=is_cross_attention)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/models/esm/modeling_esm.py", line 314, in __init__
+    self.is_decoder = config.is_decoder
+                      ^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/configuration_utils.py", line 411, in __getattribute__
+    return super().__getattribute__(key)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+AttributeError: 'EsmConfig' object has no attribute 'is_decoder'

@@ -1,0 +1,55 @@
+{
+  "dgeb_version": "0.2.0",
+  "task": {
+    "id": "bacarch_bigene",
+    "display_name": "BacArch BiGene",
+    "description": "Evaluate on BacArch bigene matching task between bacterial (E.coli K-12) proteins and archaeal (Sulfolobus acidocaldarius DSM 639) proteins.",
+    "modality": "protein",
+    "type": "bigene_mining",
+    "datasets": [
+      {
+        "path": "tattabio/bac_arch_bigene",
+        "revision": "d5a65e44bae43a9ba9f2fdc03056dff9c12f6631"
+      }
+    ],
+    "primary_metric_id": "f1"
+  },
+  "model": {
+    "hf_name": "random-model",
+    "num_layers": 2,
+    "num_params": 0,
+    "embed_dim": 128
+  },
+  "results": [
+    {
+      "layer_number": 1,
+      "layer_display_name": "1",
+      "metrics": [
+        {
+          "id": "precision",
+          "display_name": "precision",
+          "description": null,
+          "value": 0.0018867924528301887
+        },
+        {
+          "id": "recall",
+          "display_name": "recall",
+          "description": null,
+          "value": 0.0037735849056603774
+        },
+        {
+          "id": "f1",
+          "display_name": "f1",
+          "description": null,
+          "value": 0.0025157232704402514
+        },
+        {
+          "id": "accuracy",
+          "display_name": "accuracy",
+          "description": null,
+          "value": 0.0037735849056603774
+        }
+      ]
+    }
+  ]
+}

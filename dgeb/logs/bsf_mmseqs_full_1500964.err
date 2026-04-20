@@ -1,0 +1,12 @@
+INFO:dgeb.dgeb:
+
+********************** Evaluating RpoB Bacterial Phylogeny **********************
+Using the latest cached version of the dataset since tattabio/rpob_bac_phylogeny_sequences couldn't be found on the Hugging Face Hub (offline mode is enabled).
+WARNING:datasets.load:Using the latest cached version of the dataset since tattabio/rpob_bac_phylogeny_sequences couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /scratch/users/khoang99/hf_cache/datasets/tattabio___rpob_bac_phylogeny_sequences/default/0.0.0/b833ef8d8d873ea5387540562873f41d073d3e03 (last modified on Fri Mar 27 15:20:12 2026).
+WARNING:datasets.packaged_modules.cache.cache:Found the latest cached dataset configuration 'default' at /scratch/users/khoang99/hf_cache/datasets/tattabio___rpob_bac_phylogeny_sequences/default/0.0.0/b833ef8d8d873ea5387540562873f41d073d3e03 (last modified on Fri Mar 27 15:20:12 2026).
+Using the latest cached version of the dataset since tattabio/rpob_bac_phylogeny_distances couldn't be found on the Hugging Face Hub (offline mode is enabled).
+WARNING:datasets.load:Using the latest cached version of the dataset since tattabio/rpob_bac_phylogeny_distances couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /scratch/users/khoang99/hf_cache/datasets/tattabio___rpob_bac_phylogeny_distances/default/0.0.0/0594e1501ac9fd0e3de49257b8ec318c2a0ea6f7 (last modified on Fri Mar 27 15:20:14 2026).
+WARNING:datasets.packaged_modules.cache.cache:Found the latest cached dataset configuration 'default' at /scratch/users/khoang99/hf_cache/datasets/tattabio___rpob_bac_phylogeny_distances/default/0.0.0/0594e1501ac9fd0e3de49257b8ec318c2a0ea6f7 (last modified on Fri Mar 27 15:20:14 2026).
+encoding:   0%|          | 0/3 [00:00<?, ?it/s]encoding:  33%|███▎      | 1/3 [05:37<11:15, 337.75s/it]encoding:  67%|██████▋   | 2/3 [11:11<05:35, 335.41s/it][2026-03-28T19:02:59.213] error: *** JOB 1500964 ON oat-02 CANCELLED AT 2026-03-28T19:02:59 DUE to SIGNAL Terminated ***

@@ -1,0 +1,262 @@
+INFO:dgeb.dgeb:
+
+********************** Evaluating RpoB Bacterial Phylogeny **********************
+ERROR:dgeb.dgeb:Couldn't reach 'tattabio/rpob_bac_dna_phylogeny_sequences' on the Hub (OfflineModeIsEnabled)
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 126, in run
+    return run_eds_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 25, in run_eds_task
+    ds = metadata.datasets[0].load()["train"]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1149, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'tattabio/rpob_bac_dna_phylogeny_sequences' on the Hub (OfflineModeIsEnabled)
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.eds_tasks.RpobBacDNAPhylogeny'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating RpoB Archaeal Phylogeny **********************
+ERROR:dgeb.dgeb:Couldn't reach 'tattabio/rpob_arch_dna_phylogeny_sequences' on the Hub (OfflineModeIsEnabled)
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 150, in run
+    return run_eds_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 25, in run_eds_task
+    ds = metadata.datasets[0].load()["train"]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1149, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'tattabio/rpob_arch_dna_phylogeny_sequences' on the Hub (OfflineModeIsEnabled)
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.eds_tasks.RpobArchDNAPhylogeny'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating 16S Bacterial Phylogeny **********************
+ERROR:dgeb.dgeb:Couldn't reach 'tattabio/bac_16S_sequences' on the Hub (OfflineModeIsEnabled)
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 198, in run
+    return run_eds_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 25, in run_eds_task
+    ds = metadata.datasets[0].load()["train"]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1149, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'tattabio/bac_16S_sequences' on the Hub (OfflineModeIsEnabled)
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.eds_tasks.Bac16SPhylogeny'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating 16S Archaeal Phylogeny **********************
+ERROR:dgeb.dgeb:Couldn't reach 'tattabio/arch_16S_sequences' on the Hub (OfflineModeIsEnabled)
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 222, in run
+    return run_eds_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 25, in run_eds_task
+    ds = metadata.datasets[0].load()["train"]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1149, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'tattabio/arch_16S_sequences' on the Hub (OfflineModeIsEnabled)
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.eds_tasks.Arch16SPhylogeny'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating 18S Eukaryotic Phylogeny **********************
+ERROR:dgeb.dgeb:Couldn't reach 'tattabio/euk_18S_sequences' on the Hub (OfflineModeIsEnabled)
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 246, in run
+    return run_eds_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 25, in run_eds_task
+    ds = metadata.datasets[0].load()["train"]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1149, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'tattabio/euk_18S_sequences' on the Hub (OfflineModeIsEnabled)
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.eds_tasks.Euk18SPhylogeny'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating EC Classification **********************
+ERROR:dgeb.dgeb:Couldn't reach 'tattabio/ec_classification_dna' on the Hub (OfflineModeIsEnabled)
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/classification_tasks.py", line 115, in run
+    return run_classification_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/classification_tasks.py", line 61, in run_classification_task
+    ds = metadata.datasets[0].load()
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1149, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'tattabio/ec_classification_dna' on the Hub (OfflineModeIsEnabled)
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.classification_tasks.EnzymeCommissionDNAClassification'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating MIBiG Classification **********************
+ERROR:dgeb.dgeb:Couldn't reach 'tattabio/mibig_classification_dna' on the Hub (OfflineModeIsEnabled)
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/classification_tasks.py", line 213, in run
+    return run_mibig_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/classification_tasks.py", line 142, in run_mibig_task
+    ds = metadata.datasets[0].load()
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1149, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'tattabio/mibig_classification_dna' on the Hub (OfflineModeIsEnabled)
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.classification_tasks.MIBiGDNAClassification'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating E.coli RNA Clustering **********************
+ERROR:dgeb.dgeb:Couldn't reach 'tattabio/e_coli_rnas' on the Hub (OfflineModeIsEnabled)
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/clustering_tasks.py", line 50, in run
+    return run_clustering_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/clustering_tasks.py", line 20, in run_clustering_task
+    ds = metadata.datasets[0].load()["train"]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1149, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'tattabio/e_coli_rnas' on the Hub (OfflineModeIsEnabled)
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.clustering_tasks.RNAclustering'>

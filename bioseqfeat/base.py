@@ -3,8 +3,9 @@ Abstract base class and Pipeline for biological sequence feature extraction.
 
 Classes
 -------
-Featurizer -- abstract base; implement ``extract_one`` to create a new extractor.
-Pipeline   -- chains multiple featurizers with optional per-featurizer weighting.
+Featurizer           -- abstract base; implement ``extract_one`` to create a new extractor.
+NormalizedFeaturizer -- wraps any Featurizer and L2-normalizes its output to unit norm.
+Pipeline             -- chains multiple featurizers with optional per-featurizer weighting.
 """
 
 from __future__ import annotations
@@ -49,6 +50,46 @@ class Featurizer(abc.ABC):
 
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}({self.name!r})"
+
+
+class NormalizedFeaturizer(Featurizer):
+    """Wraps a Featurizer and L2-normalizes its output to unit norm.
+
+    This is essential when combining featurizers whose outputs have very
+    different natural scales (e.g., BLOSUM embeddings with norm ~30 vs.
+    probability distributions with norm ~0.1). Without normalization the
+    Pipeline's ``sqrt(weight)`` scaling is meaningless because the raw
+    norms already differ by orders of magnitude.
+
+    After wrapping, each block has unit norm, so the Pipeline weights
+    directly control each block's contribution to cosine similarity:
+
+        cosine(combined) ≈ Σ_i w_i · cosine_i(v1, v2) / Σ_i w_i
+
+    Parameters
+    ----------
+    featurizer : Featurizer
+        The featurizer to wrap.
+    eps : float
+        Small constant added to the norm to avoid division by zero for
+        zero vectors (e.g. empty or all-unknown sequences).
+    """
+
+    def __init__(self, featurizer: Featurizer, eps: float = 1e-8):
+        self._featurizer = featurizer
+        self._eps = eps
+
+    @property
+    def name(self) -> str:
+        return f"norm_{self._featurizer.name}"
+
+    def extract_one(self, seq: str, **kwargs) -> np.ndarray:
+        v = self._featurizer.extract_one(seq, **kwargs)
+        norm = np.linalg.norm(v)
+        return v / (norm + self._eps)
+
+    def __repr__(self) -> str:
+        return f"NormalizedFeaturizer({self._featurizer!r})"
 
 
 class Pipeline:

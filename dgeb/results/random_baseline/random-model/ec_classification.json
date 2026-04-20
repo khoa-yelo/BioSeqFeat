@@ -1,0 +1,43 @@
+{
+  "dgeb_version": "0.2.0",
+  "task": {
+    "id": "ec_classification",
+    "display_name": "EC Classification",
+    "description": "Evaluate on Enzyme Commission number classification task.",
+    "modality": "protein",
+    "type": "classification",
+    "datasets": [
+      {
+        "path": "tattabio/ec_classification",
+        "revision": "ead5570168e6969a5149f6861e8a33d6b5d22498"
+      }
+    ],
+    "primary_metric_id": "f1"
+  },
+  "model": {
+    "hf_name": "random-model",
+    "num_layers": 2,
+    "num_params": 0,
+    "embed_dim": 128
+  },
+  "results": [
+    {
+      "layer_number": 1,
+      "layer_display_name": "1",
+      "metrics": [
+        {
+          "id": "accuracy",
+          "display_name": "accuracy",
+          "description": null,
+          "value": 0.0078125
+        },
+        {
+          "id": "f1",
+          "display_name": "f1",
+          "description": null,
+          "value": 0.0078125
+        }
+      ]
+    }
+  ]
+}

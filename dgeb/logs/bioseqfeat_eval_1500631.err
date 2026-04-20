@@ -1,0 +1,1538 @@
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/facebook/esm2_t6_8M_UR50D/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esm2_t6_8M_UR50D/c731040fcd8d73dceaa04b0a8e6329b345b0f5df/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/facebook/esm2_t6_8M_UR50D/c731040fcd8d73dceaa04b0a8e6329b345b0f5df/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/facebook/esm2_t6_8M_UR50D/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/facebook/esm2_t6_8M_UR50D/xet-read-token/c731040fcd8d73dceaa04b0a8e6329b345b0f5df "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/107 [00:00<?, ?it/s]Loading weights: 100%|██████████| 107/107 [00:00<00:00, 3486.70it/s]
+[1mEsmModel LOAD REPORT[0m from: facebook/esm2_t6_8M_UR50D
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.dense.bias          | UNEXPECTED | 
+esm.embeddings.position_ids | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+pooler.dense.weight         | MISSING    | 
+pooler.dense.bias           | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/facebook/esm2_t6_8M_UR50D/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esm2_t6_8M_UR50D/c731040fcd8d73dceaa04b0a8e6329b345b0f5df/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/facebook/esm2_t6_8M_UR50D/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esm2_t6_8M_UR50D/c731040fcd8d73dceaa04b0a8e6329b345b0f5df/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/facebook/esm2_t6_8M_UR50D/c731040fcd8d73dceaa04b0a8e6329b345b0f5df/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/facebook/esm2_t6_8M_UR50D/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/facebook/esm2_t6_8M_UR50D/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/facebook/esm2_t6_8M_UR50D/resolve/main/vocab.txt "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esm2_t6_8M_UR50D/c731040fcd8d73dceaa04b0a8e6329b345b0f5df/vocab.txt "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/facebook/esm2_t6_8M_UR50D/c731040fcd8d73dceaa04b0a8e6329b345b0f5df/vocab.txt "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/facebook/esm2_t6_8M_UR50D/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/facebook/esm2_t6_8M_UR50D/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esm2_t6_8M_UR50D/c731040fcd8d73dceaa04b0a8e6329b345b0f5df/special_tokens_map.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/facebook/esm2_t6_8M_UR50D/c731040fcd8d73dceaa04b0a8e6329b345b0f5df/special_tokens_map.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/facebook/esm2_t6_8M_UR50D/resolve/main/tokenizer.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/facebook/esm2_t6_8M_UR50D/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+INFO:dgeb.dgeb:
+
+********************** Evaluating RpoB Bacterial Phylogeny **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/rpob_bac_phylogeny_sequences/resolve/b833ef8d8d873ea5387540562873f41d073d3e03/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/rpob_bac_phylogeny_sequences/b833ef8d8d873ea5387540562873f41d073d3e03/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/rpob_bac_phylogeny_sequences/b833ef8d8d873ea5387540562873f41d073d3e03/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/rpob_bac_phylogeny_sequences/resolve/b833ef8d8d873ea5387540562873f41d073d3e03/rpob_bac_phylogeny_sequences.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/rpob_bac_phylogeny_sequences/tattabio/rpob_bac_phylogeny_sequences.py "HTTP/1.1 404 Not Found"
+ERROR:dgeb.dgeb:The read operation timed out
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 78, in run
+    return run_eds_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 25, in run_eds_task
+    ds = metadata.datasets[0].load()["train"]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1182, in dataset_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 598, in get_module
+    standalone_yaml_path = cached_path(
+        hf_dataset_url(self.name, config.REPOYAML_FILENAME, revision=self.commit_hash),
+        download_config=download_config,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/utils/file_utils.py", line 180, in cached_path
+    ).resolve_path(url_or_filename)
+      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/hf_file_system.py", line 353, in resolve_path
+    repo_and_revision_exist, err = self._repo_and_revision_exist(repo_type, repo_id, revision)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/hf_file_system.py", line 261, in _repo_and_revision_exist
+    self._api.repo_info(
+    ~~~~~~~~~~~~~~~~~~~^
+        repo_id, revision=revision, repo_type=repo_type, timeout=constants.HF_HUB_ETAG_TIMEOUT
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/hf_api.py", line 3285, in repo_info
+    return method(
+        repo_id,
+    ...<4 lines>...
+        files_metadata=files_metadata,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/hf_api.py", line 3090, in dataset_info
+    r = get_session().get(path, headers=headers, timeout=timeout, params=params)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<7 lines>...
+        extensions=extensions,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.eds_tasks.RpobBacPhylogeny'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating RpoB Archaeal Phylogeny **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/rpob_arch_phylogeny_sequences/resolve/10de75b9f5ad12340d629fd1ad015ef4319d6ee4/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/rpob_arch_phylogeny_sequences/10de75b9f5ad12340d629fd1ad015ef4319d6ee4/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/rpob_arch_phylogeny_sequences/10de75b9f5ad12340d629fd1ad015ef4319d6ee4/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/rpob_arch_phylogeny_sequences/resolve/10de75b9f5ad12340d629fd1ad015ef4319d6ee4/rpob_arch_phylogeny_sequences.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/rpob_arch_phylogeny_sequences/tattabio/rpob_arch_phylogeny_sequences.py "HTTP/1.1 404 Not Found"
+ERROR:dgeb.dgeb:The read operation timed out
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 102, in run
+    return run_eds_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 25, in run_eds_task
+    ds = metadata.datasets[0].load()["train"]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1182, in dataset_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 598, in get_module
+    standalone_yaml_path = cached_path(
+        hf_dataset_url(self.name, config.REPOYAML_FILENAME, revision=self.commit_hash),
+        download_config=download_config,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/utils/file_utils.py", line 180, in cached_path
+    ).resolve_path(url_or_filename)
+      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/hf_file_system.py", line 353, in resolve_path
+    repo_and_revision_exist, err = self._repo_and_revision_exist(repo_type, repo_id, revision)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/hf_file_system.py", line 261, in _repo_and_revision_exist
+    self._api.repo_info(
+    ~~~~~~~~~~~~~~~~~~~^
+        repo_id, revision=revision, repo_type=repo_type, timeout=constants.HF_HUB_ETAG_TIMEOUT
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/hf_api.py", line 3285, in repo_info
+    return method(
+        repo_id,
+    ...<4 lines>...
+        files_metadata=files_metadata,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/hf_api.py", line 3090, in dataset_info
+    r = get_session().get(path, headers=headers, timeout=timeout, params=params)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<7 lines>...
+        extensions=extensions,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.eds_tasks.RpobArchPhylogeny'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating FeFeHydrogenase Phylogeny **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/fefe_phylogeny_sequences/resolve/bce06d79d9ce58413e7bcbed6943905d1afb8b26/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/fefe_phylogeny_sequences/bce06d79d9ce58413e7bcbed6943905d1afb8b26/README.md "HTTP/1.1 200 OK"
+ERROR:dgeb.dgeb:Couldn't reach 'tattabio/fefe_phylogeny_sequences' on the Hub (ReadTimeout)
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 174, in run
+    return run_eds_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/eds_tasks.py", line 25, in run_eds_task
+    ds = metadata.datasets[0].load()["train"]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/tasks.py", line 65, in load
+    ds = datasets.load_dataset(self.path, revision=self.revision)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/datasets/load.py", line 1149, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'tattabio/fefe_phylogeny_sequences' on the Hub (ReadTimeout)
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.eds_tasks.FeFePhylogeny'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating E.coli Operonic Pair **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ecoli_operonic_pair/resolve/a62c01143a842696fc8200b91c1acb825e8cb891/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/ecoli_operonic_pair/a62c01143a842696fc8200b91c1acb825e8cb891/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/ecoli_operonic_pair/a62c01143a842696fc8200b91c1acb825e8cb891/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ecoli_operonic_pair/resolve/a62c01143a842696fc8200b91c1acb825e8cb891/ecoli_operonic_pair.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/ecoli_operonic_pair/tattabio/ecoli_operonic_pair.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/ecoli_operonic_pair/revision/a62c01143a842696fc8200b91c1acb825e8cb891 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ecoli_operonic_pair/resolve/a62c01143a842696fc8200b91c1acb825e8cb891/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/ecoli_operonic_pair/tree/a62c01143a842696fc8200b91c1acb825e8cb891/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/ecoli_operonic_pair/tree/a62c01143a842696fc8200b91c1acb825e8cb891?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ecoli_operonic_pair/resolve/a62c01143a842696fc8200b91c1acb825e8cb891/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ecoli_operonic_pair/resolve/a62c01143a842696fc8200b91c1acb825e8cb891/data/train-00000-of-00001.parquet "HTTP/1.1 502 Bad Gateway"
+HTTP Error 502 thrown while requesting HEAD https://huggingface.co/datasets/tattabio/ecoli_operonic_pair/resolve/a62c01143a842696fc8200b91c1acb825e8cb891/data/train-00000-of-00001.parquet
+WARNING:huggingface_hub.utils._http:HTTP Error 502 thrown while requesting HEAD https://huggingface.co/datasets/tattabio/ecoli_operonic_pair/resolve/a62c01143a842696fc8200b91c1acb825e8cb891/data/train-00000-of-00001.parquet
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ecoli_operonic_pair/resolve/a62c01143a842696fc8200b91c1acb825e8cb891/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/ecoli_operonic_pair/xet-read-token/a62c01143a842696fc8200b91c1acb825e8cb891 "HTTP/1.1 200 OK"
+Generating train split:   0%|          | 0/4315 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 4315/4315 [00:00<00:00, 83510.62 examples/s]
+/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py:424: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+encoding:   0%|          | 0/34 [00:00<?, ?it/s]/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py:432: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+encoding:   3%|▎         | 1/34 [01:14<41:10, 74.87s/it]encoding:  91%|█████████ | 31/34 [01:24<00:06,  2.03s/it]encoding: 100%|██████████| 34/34 [01:26<00:00,  2.55s/it]
+INFO:dgeb.evaluators:Computing similarity distances...
+INFO:dgeb.evaluators:Computing metrics...
+INFO:dgeb.tasks.pair_classification_tasks:Layer: 3, E.coli Operonic Pair classification results: {'cos_sim_accuracy': np.float64(0.6353732035234122), 'cos_sim_accuracy_threshold': np.float32(0.9866563), 'cos_sim_f1': np.float64(0.5892511013215859), 'cos_sim_f1_threshold': np.float32(0.9222267), 'cos_sim_precision': 0.4256619144602851, 'cos_sim_recall': np.float64(0.9570692615912993), 'cos_sim_ap': 0.5334395272423882, 'manhattan_accuracy': np.float64(0.6332869726471951), 'manhattan_accuracy_threshold': np.float32(28.677162), 'manhattan_f1': np.float64(0.5785809018567639), 'manhattan_f1_threshold': np.float32(108.0753), 'manhattan_precision': 0.4072345390898483, 'manhattan_recall': np.float64(0.9988551803091014), 'manhattan_ap': 0.5209626891787305, 'euclidean_accuracy': np.float64(0.6316643486323598), 'euclidean_accuracy_threshold': np.float32(2.2130103), 'euclidean_f1': np.float64(0.5811421872383186), 'euclidean_f1_threshold': np.float32(7.783101), 'euclidean_precision': 0.4107481060606061, 'euclidean_recall': np.float64(0.9931310818546079), 'euclidean_ap': 0.521491019384393, 'dot_accuracy': np.float64(0.6105702364394993), 'dot_accuracy_threshold': np.float32(263.15073), 'dot_f1': np.float64(0.5766182298546895), 'dot_f1_threshold': np.float32(145.48297), 'dot_precision': 0.40519842190763516, 'dot_recall': np.float64(0.9994275901545506), 'dot_ap': 0.4583612708522853, 'top_ap': 0.5334395272423882}
+INFO:dgeb.evaluators:Computing similarity distances...
+INFO:dgeb.evaluators:Computing metrics...
+INFO:dgeb.tasks.pair_classification_tasks:Layer: 5, E.coli Operonic Pair classification results: {'cos_sim_accuracy': np.float64(0.625173852573018), 'cos_sim_accuracy_threshold': np.float32(0.96595323), 'cos_sim_f1': np.float64(0.5768532276704639), 'cos_sim_f1_threshold': np.float32(0.6906975), 'cos_sim_precision': 0.4053364269141531, 'cos_sim_recall': np.float64(1.0), 'cos_sim_ap': 0.5151491623033888, 'manhattan_accuracy': np.float64(0.626332869726472), 'manhattan_accuracy_threshold': np.float32(107.05493), 'manhattan_f1': np.float64(0.5768911055694097), 'manhattan_f1_threshold': np.float32(344.69086), 'manhattan_precision': 0.4065135895032802, 'manhattan_recall': np.float64(0.9931310818546079), 'manhattan_ap': 0.519050616303067, 'euclidean_accuracy': np.float64(0.6270282800185443), 'euclidean_accuracy_threshold': np.float32(7.555857), 'euclidean_f1': np.float64(0.5776892430278885), 'euclidean_f1_threshold': np.float32(25.033081), 'euclidean_precision': 0.40682721533785365, 'euclidean_recall': np.float64(0.9959931310818546), 'euclidean_ap': 0.5218950688136299, 'dot_accuracy': np.float64(0.5948076031525267), 'dot_accuracy_threshold': np.float32(1922.3352), 'dot_f1': np.float64(0.577347143334447), 'dot_f1_threshold': np.float32(901.33636), 'dot_precision': 0.40764331210191085, 'dot_recall': np.float64(0.9891242129364625), 'dot_ap': 0.3848151333282837, 'top_ap': 0.5218950688136299}
+INFO:dgeb.dgeb:
+
+********************** Evaluating Cyano Operonic Pair **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/cyano_operonic_pair/resolve/eeb4cb71ec2a4ff688af9de7c0662123577d32ec/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/cyano_operonic_pair/eeb4cb71ec2a4ff688af9de7c0662123577d32ec/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/cyano_operonic_pair/eeb4cb71ec2a4ff688af9de7c0662123577d32ec/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/cyano_operonic_pair/resolve/eeb4cb71ec2a4ff688af9de7c0662123577d32ec/cyano_operonic_pair.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/cyano_operonic_pair/tattabio/cyano_operonic_pair.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/cyano_operonic_pair/revision/eeb4cb71ec2a4ff688af9de7c0662123577d32ec "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/cyano_operonic_pair/resolve/eeb4cb71ec2a4ff688af9de7c0662123577d32ec/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/cyano_operonic_pair/tree/eeb4cb71ec2a4ff688af9de7c0662123577d32ec/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/cyano_operonic_pair/tree/eeb4cb71ec2a4ff688af9de7c0662123577d32ec?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/cyano_operonic_pair/resolve/eeb4cb71ec2a4ff688af9de7c0662123577d32ec/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/cyano_operonic_pair/resolve/eeb4cb71ec2a4ff688af9de7c0662123577d32ec/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/cyano_operonic_pair/xet-read-token/eeb4cb71ec2a4ff688af9de7c0662123577d32ec "HTTP/1.1 200 OK"
+Generating train split:   0%|          | 0/2611 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 2611/2611 [00:00<00:00, 52995.08 examples/s]
+Parameter 'transform'=functools.partial(<bound method BioSeqTransformer._tokenize_func of <dgeb.models.ESM object at 0x7322555ce660>>, EsmTokenizer(name_or_path='facebook/esm2_t6_8M_UR50D', vocab_size=33, model_max_length=1000000000000000019884624838656, padding_side='right', truncation_side='right', special_tokens={'eos_token': '<eos>', 'unk_token': '<unk>', 'pad_token': '<pad>', 'cls_token': '<cls>', 'mask_token': '<mask>'}, added_tokens_decoder={
+	0: AddedToken("<cls>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	1: AddedToken("<pad>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	2: AddedToken("<eos>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	3: AddedToken("<unk>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	32: AddedToken("<mask>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+}), max_seq_length=1024) of the transform datasets.arrow_dataset.Dataset.set_format couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only shown once. Subsequent hashing failures won't be shown.
+WARNING:datasets.fingerprint:Parameter 'transform'=functools.partial(<bound method BioSeqTransformer._tokenize_func of <dgeb.models.ESM object at 0x7322555ce660>>, EsmTokenizer(name_or_path='facebook/esm2_t6_8M_UR50D', vocab_size=33, model_max_length=1000000000000000019884624838656, padding_side='right', truncation_side='right', special_tokens={'eos_token': '<eos>', 'unk_token': '<unk>', 'pad_token': '<pad>', 'cls_token': '<cls>', 'mask_token': '<mask>'}, added_tokens_decoder={
+	0: AddedToken("<cls>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	1: AddedToken("<pad>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	2: AddedToken("<eos>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	3: AddedToken("<unk>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	32: AddedToken("<mask>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+}), max_seq_length=1024) of the transform datasets.arrow_dataset.Dataset.set_format couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only shown once. Subsequent hashing failures won't be shown.
+/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py:424: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+encoding:   0%|          | 0/21 [00:00<?, ?it/s]/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py:432: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py:433: UserWarning: Got pickle error when attempting to start a worker Process. This might be because the worker Process arguments are not picklable. Python 3.14+ changed the multiprocessing start method in non-Mac POSIX platforms to 'forkserver', which requires the worker Process arguments to be picklable. You can also try multiprocessing.set_start_method('fork').
+  return _MultiProcessingDataLoaderIter(self)
+encoding:   0%|          | 0/21 [00:00<?, ?it/s]
+ERROR:dgeb.dgeb:Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/pair_classification_tasks.py", line 76, in run
+    return run_pair_classification_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/pair_classification_tasks.py", line 26, in run_pair_classification_task
+    embeds = model.encode(ds["Sequence"])
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 192, in encode
+    for batch_dict in tqdm.tqdm(
+                      ~~~~~~~~~^
+        data_loader, desc="encoding", mininterval=10, disable=len(sequences) < 128
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 300, in _Popen
+    return Popen(process_obj)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 47, in _launch
+    reduction.dump(process_obj, buf)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+when serializing collections.OrderedDict item 1
+when serializing collections.OrderedDict object
+when serializing dict item '_forward_hooks'
+when serializing transformers.models.esm.modeling_esm.EsmLayer state
+when serializing transformers.models.esm.modeling_esm.EsmLayer object
+when serializing dict item '0'
+when serializing dict item '_modules'
+when serializing torch.nn.modules.container.ModuleList state
+when serializing torch.nn.modules.container.ModuleList object
+when serializing dict item 'layer'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmEncoder state
+when serializing transformers.models.esm.modeling_esm.EsmEncoder object
+when serializing dict item 'encoder'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmModel state
+when serializing transformers.models.esm.modeling_esm.EsmModel object
+when serializing dict item 'encoder'
+when serializing dgeb.models.ESM state
+when serializing dgeb.models.ESM object
+when serializing tuple item 0
+when serializing method reconstructor arguments
+when serializing method object
+when serializing tuple item 0
+when serializing functools.partial reconstructor arguments
+when serializing functools.partial object
+when serializing dict item 'transform'
+when serializing dict item '_format_kwargs'
+when serializing datasets.arrow_dataset.Dataset state
+when serializing datasets.arrow_dataset.Dataset object
+when serializing tuple item 1
+when serializing dict item '_args'
+when serializing multiprocessing.context.Process state
+when serializing multiprocessing.context.Process object
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.pair_classification_tasks.CyanoOperonPair'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating Vibrio Operonic Pair **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/vibrio_operonic_pair/resolve/24781b12b45bf81a079a6164ef0d2124948c1878/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/vibrio_operonic_pair/24781b12b45bf81a079a6164ef0d2124948c1878/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/vibrio_operonic_pair/24781b12b45bf81a079a6164ef0d2124948c1878/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/vibrio_operonic_pair/resolve/24781b12b45bf81a079a6164ef0d2124948c1878/vibrio_operonic_pair.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/vibrio_operonic_pair/tattabio/vibrio_operonic_pair.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/vibrio_operonic_pair/revision/24781b12b45bf81a079a6164ef0d2124948c1878 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/vibrio_operonic_pair/resolve/24781b12b45bf81a079a6164ef0d2124948c1878/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/vibrio_operonic_pair/tree/24781b12b45bf81a079a6164ef0d2124948c1878/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/vibrio_operonic_pair/tree/24781b12b45bf81a079a6164ef0d2124948c1878?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/vibrio_operonic_pair/resolve/24781b12b45bf81a079a6164ef0d2124948c1878/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/vibrio_operonic_pair/resolve/24781b12b45bf81a079a6164ef0d2124948c1878/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/vibrio_operonic_pair/xet-read-token/24781b12b45bf81a079a6164ef0d2124948c1878 "HTTP/1.1 200 OK"
+Generating train split:   0%|          | 0/2574 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 2574/2574 [00:00<00:00, 53892.04 examples/s]
+encoding:   0%|          | 0/21 [00:00<?, ?it/s]encoding:   0%|          | 0/21 [00:00<?, ?it/s]
+ERROR:dgeb.dgeb:Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/pair_classification_tasks.py", line 96, in run
+    return run_pair_classification_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/pair_classification_tasks.py", line 26, in run_pair_classification_task
+    embeds = model.encode(ds["Sequence"])
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 192, in encode
+    for batch_dict in tqdm.tqdm(
+                      ~~~~~~~~~^
+        data_loader, desc="encoding", mininterval=10, disable=len(sequences) < 128
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 300, in _Popen
+    return Popen(process_obj)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 47, in _launch
+    reduction.dump(process_obj, buf)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+when serializing collections.OrderedDict item 1
+when serializing collections.OrderedDict object
+when serializing dict item '_forward_hooks'
+when serializing transformers.models.esm.modeling_esm.EsmLayer state
+when serializing transformers.models.esm.modeling_esm.EsmLayer object
+when serializing dict item '0'
+when serializing dict item '_modules'
+when serializing torch.nn.modules.container.ModuleList state
+when serializing torch.nn.modules.container.ModuleList object
+when serializing dict item 'layer'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmEncoder state
+when serializing transformers.models.esm.modeling_esm.EsmEncoder object
+when serializing dict item 'encoder'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmModel state
+when serializing transformers.models.esm.modeling_esm.EsmModel object
+when serializing dict item 'encoder'
+when serializing dgeb.models.ESM state
+when serializing dgeb.models.ESM object
+when serializing tuple item 0
+when serializing method reconstructor arguments
+when serializing method object
+when serializing tuple item 0
+when serializing functools.partial reconstructor arguments
+when serializing functools.partial object
+when serializing dict item 'transform'
+when serializing dict item '_format_kwargs'
+when serializing datasets.arrow_dataset.Dataset state
+when serializing datasets.arrow_dataset.Dataset object
+when serializing tuple item 1
+when serializing dict item '_args'
+when serializing multiprocessing.context.Process state
+when serializing multiprocessing.context.Process object
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.pair_classification_tasks.VibrioOperonPair'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating Arch Retrieval **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval/resolve/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/arch_retrieval/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/arch_retrieval/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval/resolve/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/arch_retrieval.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/arch_retrieval/tattabio/arch_retrieval.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/arch_retrieval/revision/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval/resolve/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/arch_retrieval/tree/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/arch_retrieval/tree/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval/resolve/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval/resolve/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/arch_retrieval/xet-read-token/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval/resolve/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/data/test-00000-of-00001.parquet "HTTP/1.1 302 Found"
+Generating train split:   0%|          | 0/9229 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 9229/9229 [00:00<00:00, 118856.28 examples/s]
+Generating test split:   0%|          | 0/2343 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2343/2343 [00:00<00:00, 48801.25 examples/s]
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval/resolve/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/arch_retrieval.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/arch_retrieval/tattabio/arch_retrieval.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval/resolve/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval/resolve/a19124322604a21b26b1b3c13a1bd0b8a63c9f7b/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval_qrels/resolve/3f142f2f9a0995d56c6e77188c7251761450afcf/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/arch_retrieval_qrels/3f142f2f9a0995d56c6e77188c7251761450afcf/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/arch_retrieval_qrels/3f142f2f9a0995d56c6e77188c7251761450afcf/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval_qrels/resolve/3f142f2f9a0995d56c6e77188c7251761450afcf/arch_retrieval_qrels.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/arch_retrieval_qrels/tattabio/arch_retrieval_qrels.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/arch_retrieval_qrels/revision/3f142f2f9a0995d56c6e77188c7251761450afcf "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval_qrels/resolve/3f142f2f9a0995d56c6e77188c7251761450afcf/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/arch_retrieval_qrels/tree/3f142f2f9a0995d56c6e77188c7251761450afcf/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/arch_retrieval_qrels/tree/3f142f2f9a0995d56c6e77188c7251761450afcf?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval_qrels/resolve/3f142f2f9a0995d56c6e77188c7251761450afcf/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/arch_retrieval_qrels/resolve/3f142f2f9a0995d56c6e77188c7251761450afcf/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/arch_retrieval_qrels/xet-read-token/3f142f2f9a0995d56c6e77188c7251761450afcf "HTTP/1.1 200 OK"
+Generating train split:   0%|          | 0/163612 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 163612/163612 [00:00<00:00, 1792732.98 examples/s]
+encoding:   0%|          | 0/73 [00:00<?, ?it/s]encoding:   0%|          | 0/73 [00:00<?, ?it/s]
+ERROR:dgeb.dgeb:Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/retrieval_tasks.py", line 72, in run
+    return run_retrieval_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/retrieval_tasks.py", line 24, in run_retrieval_task
+    corpus_embeds = model.encode(corpus_ds["Sequence"])
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 192, in encode
+    for batch_dict in tqdm.tqdm(
+                      ~~~~~~~~~^
+        data_loader, desc="encoding", mininterval=10, disable=len(sequences) < 128
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 300, in _Popen
+    return Popen(process_obj)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 47, in _launch
+    reduction.dump(process_obj, buf)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+when serializing collections.OrderedDict item 1
+when serializing collections.OrderedDict object
+when serializing dict item '_forward_hooks'
+when serializing transformers.models.esm.modeling_esm.EsmLayer state
+when serializing transformers.models.esm.modeling_esm.EsmLayer object
+when serializing dict item '0'
+when serializing dict item '_modules'
+when serializing torch.nn.modules.container.ModuleList state
+when serializing torch.nn.modules.container.ModuleList object
+when serializing dict item 'layer'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmEncoder state
+when serializing transformers.models.esm.modeling_esm.EsmEncoder object
+when serializing dict item 'encoder'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmModel state
+when serializing transformers.models.esm.modeling_esm.EsmModel object
+when serializing dict item 'encoder'
+when serializing dgeb.models.ESM state
+when serializing dgeb.models.ESM object
+when serializing tuple item 0
+when serializing method reconstructor arguments
+when serializing method object
+when serializing tuple item 0
+when serializing functools.partial reconstructor arguments
+when serializing functools.partial object
+when serializing dict item 'transform'
+when serializing dict item '_format_kwargs'
+when serializing datasets.arrow_dataset.Dataset state
+when serializing datasets.arrow_dataset.Dataset object
+when serializing tuple item 1
+when serializing dict item '_args'
+when serializing multiprocessing.context.Process state
+when serializing multiprocessing.context.Process object
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.retrieval_tasks.ArchRetrieval'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating Euk Retrieval **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval/resolve/c93dc56665cedd19fbeaea9ace146f2474c895f0/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/euk_retrieval/c93dc56665cedd19fbeaea9ace146f2474c895f0/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/euk_retrieval/c93dc56665cedd19fbeaea9ace146f2474c895f0/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval/resolve/c93dc56665cedd19fbeaea9ace146f2474c895f0/euk_retrieval.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/euk_retrieval/tattabio/euk_retrieval.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/euk_retrieval/revision/c93dc56665cedd19fbeaea9ace146f2474c895f0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval/resolve/c93dc56665cedd19fbeaea9ace146f2474c895f0/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/euk_retrieval/tree/c93dc56665cedd19fbeaea9ace146f2474c895f0/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/euk_retrieval/tree/c93dc56665cedd19fbeaea9ace146f2474c895f0?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval/resolve/c93dc56665cedd19fbeaea9ace146f2474c895f0/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval/resolve/c93dc56665cedd19fbeaea9ace146f2474c895f0/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/euk_retrieval/xet-read-token/c93dc56665cedd19fbeaea9ace146f2474c895f0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval/resolve/c93dc56665cedd19fbeaea9ace146f2474c895f0/data/test-00000-of-00001.parquet "HTTP/1.1 302 Found"
+Generating train split:   0%|          | 0/3202 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 3202/3202 [00:00<00:00, 89217.98 examples/s]
+Generating test split:   0%|          | 0/311 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 311/311 [00:00<00:00, 33128.34 examples/s]
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval/resolve/c93dc56665cedd19fbeaea9ace146f2474c895f0/euk_retrieval.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/euk_retrieval/tattabio/euk_retrieval.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval/resolve/c93dc56665cedd19fbeaea9ace146f2474c895f0/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval/resolve/c93dc56665cedd19fbeaea9ace146f2474c895f0/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval_qrels/resolve/a5aa01e9b9738074aba57fc07434e352c4c71e4b/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/euk_retrieval_qrels/a5aa01e9b9738074aba57fc07434e352c4c71e4b/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/euk_retrieval_qrels/a5aa01e9b9738074aba57fc07434e352c4c71e4b/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval_qrels/resolve/a5aa01e9b9738074aba57fc07434e352c4c71e4b/euk_retrieval_qrels.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/euk_retrieval_qrels/tattabio/euk_retrieval_qrels.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/euk_retrieval_qrels/revision/a5aa01e9b9738074aba57fc07434e352c4c71e4b "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval_qrels/resolve/a5aa01e9b9738074aba57fc07434e352c4c71e4b/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/euk_retrieval_qrels/tree/a5aa01e9b9738074aba57fc07434e352c4c71e4b/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/euk_retrieval_qrels/tree/a5aa01e9b9738074aba57fc07434e352c4c71e4b?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval_qrels/resolve/a5aa01e9b9738074aba57fc07434e352c4c71e4b/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/euk_retrieval_qrels/resolve/a5aa01e9b9738074aba57fc07434e352c4c71e4b/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/euk_retrieval_qrels/xet-read-token/a5aa01e9b9738074aba57fc07434e352c4c71e4b "HTTP/1.1 200 OK"
+Generating train split:   0%|          | 0/29377 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 29377/29377 [00:00<00:00, 1636053.12 examples/s]
+encoding:   0%|          | 0/26 [00:00<?, ?it/s]encoding:   0%|          | 0/26 [00:00<?, ?it/s]
+ERROR:dgeb.dgeb:Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/retrieval_tasks.py", line 96, in run
+    return run_retrieval_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/retrieval_tasks.py", line 24, in run_retrieval_task
+    corpus_embeds = model.encode(corpus_ds["Sequence"])
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 192, in encode
+    for batch_dict in tqdm.tqdm(
+                      ~~~~~~~~~^
+        data_loader, desc="encoding", mininterval=10, disable=len(sequences) < 128
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 300, in _Popen
+    return Popen(process_obj)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 47, in _launch
+    reduction.dump(process_obj, buf)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+when serializing collections.OrderedDict item 1
+when serializing collections.OrderedDict object
+when serializing dict item '_forward_hooks'
+when serializing transformers.models.esm.modeling_esm.EsmLayer state
+when serializing transformers.models.esm.modeling_esm.EsmLayer object
+when serializing dict item '0'
+when serializing dict item '_modules'
+when serializing torch.nn.modules.container.ModuleList state
+when serializing torch.nn.modules.container.ModuleList object
+when serializing dict item 'layer'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmEncoder state
+when serializing transformers.models.esm.modeling_esm.EsmEncoder object
+when serializing dict item 'encoder'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmModel state
+when serializing transformers.models.esm.modeling_esm.EsmModel object
+when serializing dict item 'encoder'
+when serializing dgeb.models.ESM state
+when serializing dgeb.models.ESM object
+when serializing tuple item 0
+when serializing method reconstructor arguments
+when serializing method object
+when serializing tuple item 0
+when serializing functools.partial reconstructor arguments
+when serializing functools.partial object
+when serializing dict item 'transform'
+when serializing dict item '_format_kwargs'
+when serializing datasets.arrow_dataset.Dataset state
+when serializing datasets.arrow_dataset.Dataset object
+when serializing tuple item 1
+when serializing dict item '_args'
+when serializing multiprocessing.context.Process state
+when serializing multiprocessing.context.Process object
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.retrieval_tasks.EukRetrieval'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating EC Classification **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ec_classification/resolve/ead5570168e6969a5149f6861e8a33d6b5d22498/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/ec_classification/ead5570168e6969a5149f6861e8a33d6b5d22498/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/ec_classification/ead5570168e6969a5149f6861e8a33d6b5d22498/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ec_classification/resolve/ead5570168e6969a5149f6861e8a33d6b5d22498/ec_classification.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/ec_classification/tattabio/ec_classification.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/ec_classification/revision/ead5570168e6969a5149f6861e8a33d6b5d22498 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ec_classification/resolve/ead5570168e6969a5149f6861e8a33d6b5d22498/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/ec_classification/tree/ead5570168e6969a5149f6861e8a33d6b5d22498/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/ec_classification/tree/ead5570168e6969a5149f6861e8a33d6b5d22498?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ec_classification/resolve/ead5570168e6969a5149f6861e8a33d6b5d22498/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ec_classification/resolve/ead5570168e6969a5149f6861e8a33d6b5d22498/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/ec_classification/xet-read-token/ead5570168e6969a5149f6861e8a33d6b5d22498 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/ec_classification/resolve/ead5570168e6969a5149f6861e8a33d6b5d22498/data/test-00000-of-00001.parquet "HTTP/1.1 302 Found"
+Generating train split:   0%|          | 0/512 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 512/512 [00:00<00:00, 12884.64 examples/s]
+Generating test split:   0%|          | 0/128 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 128/128 [00:00<00:00, 6234.20 examples/s]
+encoding:   0%|          | 0/4 [00:00<?, ?it/s]encoding:   0%|          | 0/4 [00:00<?, ?it/s]
+ERROR:dgeb.dgeb:Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/classification_tasks.py", line 95, in run
+    return run_classification_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/classification_tasks.py", line 63, in run_classification_task
+    train_embeds = model.encode(ds["train"]["Sequence"])
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 192, in encode
+    for batch_dict in tqdm.tqdm(
+                      ~~~~~~~~~^
+        data_loader, desc="encoding", mininterval=10, disable=len(sequences) < 128
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 300, in _Popen
+    return Popen(process_obj)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 47, in _launch
+    reduction.dump(process_obj, buf)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+when serializing collections.OrderedDict item 1
+when serializing collections.OrderedDict object
+when serializing dict item '_forward_hooks'
+when serializing transformers.models.esm.modeling_esm.EsmLayer state
+when serializing transformers.models.esm.modeling_esm.EsmLayer object
+when serializing dict item '0'
+when serializing dict item '_modules'
+when serializing torch.nn.modules.container.ModuleList state
+when serializing torch.nn.modules.container.ModuleList object
+when serializing dict item 'layer'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmEncoder state
+when serializing transformers.models.esm.modeling_esm.EsmEncoder object
+when serializing dict item 'encoder'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmModel state
+when serializing transformers.models.esm.modeling_esm.EsmModel object
+when serializing dict item 'encoder'
+when serializing dgeb.models.ESM state
+when serializing dgeb.models.ESM object
+when serializing tuple item 0
+when serializing method reconstructor arguments
+when serializing method object
+when serializing tuple item 0
+when serializing functools.partial reconstructor arguments
+when serializing functools.partial object
+when serializing dict item 'transform'
+when serializing dict item '_format_kwargs'
+when serializing datasets.arrow_dataset.Dataset state
+when serializing datasets.arrow_dataset.Dataset object
+when serializing tuple item 1
+when serializing dict item '_args'
+when serializing multiprocessing.context.Process state
+when serializing multiprocessing.context.Process object
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.classification_tasks.EnzymeCommissionClassification'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating Convergent Enzymes Classification **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/convergent_enzymes/resolve/37f75609f54de2bc0911ccb72faf1c2f5a4285aa/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/convergent_enzymes/37f75609f54de2bc0911ccb72faf1c2f5a4285aa/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/convergent_enzymes/37f75609f54de2bc0911ccb72faf1c2f5a4285aa/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/convergent_enzymes/resolve/37f75609f54de2bc0911ccb72faf1c2f5a4285aa/convergent_enzymes.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/convergent_enzymes/tattabio/convergent_enzymes.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/convergent_enzymes/revision/37f75609f54de2bc0911ccb72faf1c2f5a4285aa "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/convergent_enzymes/resolve/37f75609f54de2bc0911ccb72faf1c2f5a4285aa/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/convergent_enzymes/tree/37f75609f54de2bc0911ccb72faf1c2f5a4285aa/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/convergent_enzymes/tree/37f75609f54de2bc0911ccb72faf1c2f5a4285aa?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/convergent_enzymes/resolve/37f75609f54de2bc0911ccb72faf1c2f5a4285aa/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/convergent_enzymes/resolve/37f75609f54de2bc0911ccb72faf1c2f5a4285aa/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/convergent_enzymes/xet-read-token/37f75609f54de2bc0911ccb72faf1c2f5a4285aa "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/convergent_enzymes/resolve/37f75609f54de2bc0911ccb72faf1c2f5a4285aa/data/test-00000-of-00001.parquet "HTTP/1.1 302 Found"
+Generating train split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 2000/2000 [00:00<00:00, 37417.07 examples/s]
+Generating test split:   0%|          | 0/400 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 400/400 [00:00<00:00, 19255.16 examples/s]
+encoding:   0%|          | 0/16 [00:00<?, ?it/s]encoding:   0%|          | 0/16 [00:00<?, ?it/s]
+ERROR:dgeb.dgeb:Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/classification_tasks.py", line 135, in run
+    return run_classification_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/classification_tasks.py", line 63, in run_classification_task
+    train_embeds = model.encode(ds["train"]["Sequence"])
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 192, in encode
+    for batch_dict in tqdm.tqdm(
+                      ~~~~~~~~~^
+        data_loader, desc="encoding", mininterval=10, disable=len(sequences) < 128
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 300, in _Popen
+    return Popen(process_obj)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 47, in _launch
+    reduction.dump(process_obj, buf)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+when serializing collections.OrderedDict item 1
+when serializing collections.OrderedDict object
+when serializing dict item '_forward_hooks'
+when serializing transformers.models.esm.modeling_esm.EsmLayer state
+when serializing transformers.models.esm.modeling_esm.EsmLayer object
+when serializing dict item '0'
+when serializing dict item '_modules'
+when serializing torch.nn.modules.container.ModuleList state
+when serializing torch.nn.modules.container.ModuleList object
+when serializing dict item 'layer'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmEncoder state
+when serializing transformers.models.esm.modeling_esm.EsmEncoder object
+when serializing dict item 'encoder'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmModel state
+when serializing transformers.models.esm.modeling_esm.EsmModel object
+when serializing dict item 'encoder'
+when serializing dgeb.models.ESM state
+when serializing dgeb.models.ESM object
+when serializing tuple item 0
+when serializing method reconstructor arguments
+when serializing method object
+when serializing tuple item 0
+when serializing functools.partial reconstructor arguments
+when serializing functools.partial object
+when serializing dict item 'transform'
+when serializing dict item '_format_kwargs'
+when serializing datasets.arrow_dataset.Dataset state
+when serializing datasets.arrow_dataset.Dataset object
+when serializing tuple item 1
+when serializing dict item '_args'
+when serializing multiprocessing.context.Process state
+when serializing multiprocessing.context.Process object
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.classification_tasks.ConvergentEnzymesClassification'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating MIBiG Classification **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mibig_classification_prot/resolve/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/mibig_classification_prot/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/mibig_classification_prot/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mibig_classification_prot/resolve/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f/mibig_classification_prot.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/mibig_classification_prot/tattabio/mibig_classification_prot.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/mibig_classification_prot/revision/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mibig_classification_prot/resolve/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/mibig_classification_prot/tree/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/mibig_classification_prot/tree/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mibig_classification_prot/resolve/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mibig_classification_prot/resolve/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/mibig_classification_prot/xet-read-token/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mibig_classification_prot/resolve/915a7ff28dc9820e35c4d7fd03d4c8c44a88ff1f/data/test-00000-of-00001.parquet "HTTP/1.1 302 Found"
+Generating train split:   0%|          | 0/29992 [00:00<?, ? examples/s]Generating train split:  77%|███████▋  | 23000/29992 [00:00<00:00, 215825.40 examples/s]Generating train split: 100%|██████████| 29992/29992 [00:00<00:00, 121000.21 examples/s]
+Generating test split:   0%|          | 0/7213 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 7213/7213 [00:00<00:00, 83234.10 examples/s]
+encoding:   0%|          | 0/235 [00:00<?, ?it/s]encoding:   0%|          | 0/235 [00:00<?, ?it/s]
+ERROR:dgeb.dgeb:Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/classification_tasks.py", line 193, in run
+    return run_mibig_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/classification_tasks.py", line 149, in run_mibig_task
+    train_embeds = model.encode(ds["train"]["Sequence"])
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 192, in encode
+    for batch_dict in tqdm.tqdm(
+                      ~~~~~~~~~^
+        data_loader, desc="encoding", mininterval=10, disable=len(sequences) < 128
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 300, in _Popen
+    return Popen(process_obj)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 47, in _launch
+    reduction.dump(process_obj, buf)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+when serializing collections.OrderedDict item 1
+when serializing collections.OrderedDict object
+when serializing dict item '_forward_hooks'
+when serializing transformers.models.esm.modeling_esm.EsmLayer state
+when serializing transformers.models.esm.modeling_esm.EsmLayer object
+when serializing dict item '0'
+when serializing dict item '_modules'
+when serializing torch.nn.modules.container.ModuleList state
+when serializing torch.nn.modules.container.ModuleList object
+when serializing dict item 'layer'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmEncoder state
+when serializing transformers.models.esm.modeling_esm.EsmEncoder object
+when serializing dict item 'encoder'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmModel state
+when serializing transformers.models.esm.modeling_esm.EsmModel object
+when serializing dict item 'encoder'
+when serializing dgeb.models.ESM state
+when serializing dgeb.models.ESM object
+when serializing tuple item 0
+when serializing method reconstructor arguments
+when serializing method object
+when serializing tuple item 0
+when serializing functools.partial reconstructor arguments
+when serializing functools.partial object
+when serializing dict item 'transform'
+when serializing dict item '_format_kwargs'
+when serializing datasets.arrow_dataset.Dataset state
+when serializing datasets.arrow_dataset.Dataset object
+when serializing tuple item 1
+when serializing dict item '_args'
+when serializing multiprocessing.context.Process state
+when serializing multiprocessing.context.Process object
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.classification_tasks.MIBiGProteinClassification'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating MopB Clustering **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mopb_clustering/resolve/eed4bfff9c5bd2dc2500c50757bfcb90425d999a/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/mopb_clustering/eed4bfff9c5bd2dc2500c50757bfcb90425d999a/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/mopb_clustering/eed4bfff9c5bd2dc2500c50757bfcb90425d999a/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mopb_clustering/resolve/eed4bfff9c5bd2dc2500c50757bfcb90425d999a/mopb_clustering.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/mopb_clustering/tattabio/mopb_clustering.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/mopb_clustering/revision/eed4bfff9c5bd2dc2500c50757bfcb90425d999a "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mopb_clustering/resolve/eed4bfff9c5bd2dc2500c50757bfcb90425d999a/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/mopb_clustering/tree/eed4bfff9c5bd2dc2500c50757bfcb90425d999a/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/mopb_clustering/tree/eed4bfff9c5bd2dc2500c50757bfcb90425d999a?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mopb_clustering/resolve/eed4bfff9c5bd2dc2500c50757bfcb90425d999a/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/mopb_clustering/resolve/eed4bfff9c5bd2dc2500c50757bfcb90425d999a/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/mopb_clustering/xet-read-token/eed4bfff9c5bd2dc2500c50757bfcb90425d999a "HTTP/1.1 200 OK"
+Generating train split:   0%|          | 0/1300 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 1300/1300 [00:00<00:00, 30108.53 examples/s]
+encoding:   0%|          | 0/11 [00:00<?, ?it/s]encoding:   0%|          | 0/11 [00:00<?, ?it/s]
+ERROR:dgeb.dgeb:Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/clustering_tasks.py", line 70, in run
+    return run_clustering_task(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/clustering_tasks.py", line 21, in run_clustering_task
+    embeds = model.encode(ds["Sequence"])
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 192, in encode
+    for batch_dict in tqdm.tqdm(
+                      ~~~~~~~~~^
+        data_loader, desc="encoding", mininterval=10, disable=len(sequences) < 128
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 300, in _Popen
+    return Popen(process_obj)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 47, in _launch
+    reduction.dump(process_obj, buf)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+when serializing collections.OrderedDict item 1
+when serializing collections.OrderedDict object
+when serializing dict item '_forward_hooks'
+when serializing transformers.models.esm.modeling_esm.EsmLayer state
+when serializing transformers.models.esm.modeling_esm.EsmLayer object
+when serializing dict item '0'
+when serializing dict item '_modules'
+when serializing torch.nn.modules.container.ModuleList state
+when serializing torch.nn.modules.container.ModuleList object
+when serializing dict item 'layer'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmEncoder state
+when serializing transformers.models.esm.modeling_esm.EsmEncoder object
+when serializing dict item 'encoder'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmModel state
+when serializing transformers.models.esm.modeling_esm.EsmModel object
+when serializing dict item 'encoder'
+when serializing dgeb.models.ESM state
+when serializing dgeb.models.ESM object
+when serializing tuple item 0
+when serializing method reconstructor arguments
+when serializing method object
+when serializing tuple item 0
+when serializing functools.partial reconstructor arguments
+when serializing functools.partial object
+when serializing dict item 'transform'
+when serializing dict item '_format_kwargs'
+when serializing datasets.arrow_dataset.Dataset state
+when serializing datasets.arrow_dataset.Dataset object
+when serializing tuple item 1
+when serializing dict item '_args'
+when serializing multiprocessing.context.Process state
+when serializing multiprocessing.context.Process object
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.clustering_tasks.MopBClustering'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating BacArch BiGene **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/bac_arch_bigene/resolve/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/bac_arch_bigene/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/bac_arch_bigene/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/bac_arch_bigene/resolve/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631/bac_arch_bigene.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/bac_arch_bigene/tattabio/bac_arch_bigene.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/bac_arch_bigene/revision/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/bac_arch_bigene/resolve/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/bac_arch_bigene/tree/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/bac_arch_bigene/tree/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/bac_arch_bigene/resolve/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/bac_arch_bigene/resolve/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/bac_arch_bigene/xet-read-token/d5a65e44bae43a9ba9f2fdc03056dff9c12f6631 "HTTP/1.1 200 OK"
+Generating train split:   0%|          | 0/265 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 265/265 [00:00<00:00, 12094.17 examples/s]
+encoding:   0%|          | 0/3 [00:00<?, ?it/s]encoding:   0%|          | 0/3 [00:00<?, ?it/s]
+ERROR:dgeb.dgeb:Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/bigene_mining_tasks.py", line 53, in run
+    return run_bigene_mining_tasks(model, self.metadata)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/bigene_mining_tasks.py", line 25, in run_bigene_mining_tasks
+    embeds1 = model.encode(ds["Seq1"])
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 192, in encode
+    for batch_dict in tqdm.tqdm(
+                      ~~~~~~~~~^
+        data_loader, desc="encoding", mininterval=10, disable=len(sequences) < 128
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 300, in _Popen
+    return Popen(process_obj)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 47, in _launch
+    reduction.dump(process_obj, buf)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+when serializing collections.OrderedDict item 1
+when serializing collections.OrderedDict object
+when serializing dict item '_forward_hooks'
+when serializing transformers.models.esm.modeling_esm.EsmLayer state
+when serializing transformers.models.esm.modeling_esm.EsmLayer object
+when serializing dict item '0'
+when serializing dict item '_modules'
+when serializing torch.nn.modules.container.ModuleList state
+when serializing torch.nn.modules.container.ModuleList object
+when serializing dict item 'layer'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmEncoder state
+when serializing transformers.models.esm.modeling_esm.EsmEncoder object
+when serializing dict item 'encoder'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmModel state
+when serializing transformers.models.esm.modeling_esm.EsmModel object
+when serializing dict item 'encoder'
+when serializing dgeb.models.ESM state
+when serializing dgeb.models.ESM object
+when serializing tuple item 0
+when serializing method reconstructor arguments
+when serializing method object
+when serializing tuple item 0
+when serializing functools.partial reconstructor arguments
+when serializing functools.partial object
+when serializing dict item 'transform'
+when serializing dict item '_format_kwargs'
+when serializing datasets.arrow_dataset.Dataset state
+when serializing datasets.arrow_dataset.Dataset object
+when serializing tuple item 1
+when serializing dict item '_args'
+when serializing multiprocessing.context.Process state
+when serializing multiprocessing.context.Process object
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.bigene_mining_tasks.BacArchBiGeneMining'>
+INFO:dgeb.dgeb:
+
+********************** Evaluating ModAC Paralogy BiGene **********************
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/modac_paralogy_bigene/resolve/241ca6397856e3360da04422d54933035b1fab87/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/tattabio/modac_paralogy_bigene/241ca6397856e3360da04422d54933035b1fab87/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/tattabio/modac_paralogy_bigene/241ca6397856e3360da04422d54933035b1fab87/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/modac_paralogy_bigene/resolve/241ca6397856e3360da04422d54933035b1fab87/modac_paralogy_bigene.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/tattabio/modac_paralogy_bigene/tattabio/modac_paralogy_bigene.py "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/modac_paralogy_bigene/revision/241ca6397856e3360da04422d54933035b1fab87 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/modac_paralogy_bigene/resolve/241ca6397856e3360da04422d54933035b1fab87/.huggingface.yaml "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/modac_paralogy_bigene/tree/241ca6397856e3360da04422d54933035b1fab87/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/modac_paralogy_bigene/tree/241ca6397856e3360da04422d54933035b1fab87?recursive=false&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/modac_paralogy_bigene/resolve/241ca6397856e3360da04422d54933035b1fab87/dataset_infos.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/datasets/tattabio/modac_paralogy_bigene/resolve/241ca6397856e3360da04422d54933035b1fab87/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/datasets/tattabio/modac_paralogy_bigene/xet-read-token/241ca6397856e3360da04422d54933035b1fab87 "HTTP/1.1 200 OK"
+Generating train split:   0%|          | 0/1492 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 1492/1492 [00:00<00:00, 26311.28 examples/s]
+encoding:   0%|          | 0/12 [00:00<?, ?it/s]encoding:   0%|          | 0/12 [00:00<?, ?it/s]
+ERROR:dgeb.dgeb:Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+ERROR:dgeb.dgeb:Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 61, in run
+    result = task().run(model)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/bigene_mining_tasks.py", line 77, in run
+    return run_bigene_mining_tasks(model, self.metadata, top_k=self.TOP_K)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/tasks/bigene_mining_tasks.py", line 25, in run_bigene_mining_tasks
+    embeds1 = model.encode(ds["Seq1"])
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 192, in encode
+    for batch_dict in tqdm.tqdm(
+                      ~~~~~~~~~^
+        data_loader, desc="encoding", mininterval=10, disable=len(sequences) < 128
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/context.py", line 300, in _Popen
+    return Popen(process_obj)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 35, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/popen_forkserver.py", line 47, in _launch
+    reduction.dump(process_obj, buf)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+_pickle.PicklingError: Can't pickle local object <function install_output_capuring_hook.<locals>.output_capturing_hook at 0x732202765c70>
+when serializing collections.OrderedDict item 1
+when serializing collections.OrderedDict object
+when serializing dict item '_forward_hooks'
+when serializing transformers.models.esm.modeling_esm.EsmLayer state
+when serializing transformers.models.esm.modeling_esm.EsmLayer object
+when serializing dict item '0'
+when serializing dict item '_modules'
+when serializing torch.nn.modules.container.ModuleList state
+when serializing torch.nn.modules.container.ModuleList object
+when serializing dict item 'layer'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmEncoder state
+when serializing transformers.models.esm.modeling_esm.EsmEncoder object
+when serializing dict item 'encoder'
+when serializing dict item '_modules'
+when serializing transformers.models.esm.modeling_esm.EsmModel state
+when serializing transformers.models.esm.modeling_esm.EsmModel object
+when serializing dict item 'encoder'
+when serializing dgeb.models.ESM state
+when serializing dgeb.models.ESM object
+when serializing tuple item 0
+when serializing method reconstructor arguments
+when serializing method object
+when serializing tuple item 0
+when serializing functools.partial reconstructor arguments
+when serializing functools.partial object
+when serializing dict item 'transform'
+when serializing dict item '_format_kwargs'
+when serializing datasets.arrow_dataset.Dataset state
+when serializing datasets.arrow_dataset.Dataset object
+when serializing tuple item 1
+when serializing dict item '_args'
+when serializing multiprocessing.context.Process state
+when serializing multiprocessing.context.Process object
+
+ERROR:dgeb.dgeb:Error running task <class 'dgeb.tasks.bigene_mining_tasks.ModACParalogyBiGeneMining'>
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Rostlab/prot_t5_xl_uniref50/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Rostlab/prot_t5_xl_uniref50/973be27c52ee6474de9c945952a8008aeb2a1a73/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Rostlab/prot_t5_xl_uniref50/973be27c52ee6474de9c945952a8008aeb2a1a73/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Rostlab/prot_t5_xl_uniref50/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Rostlab/prot_t5_xl_uniref50/resolve/main/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Rostlab/prot_t5_xl_uniref50/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Rostlab/prot_t5_xl_uniref50/xet-read-token/973be27c52ee6474de9c945952a8008aeb2a1a73 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Rostlab/prot_t5_xl_uniref50/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Rostlab/prot_t5_xl_uniref50 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Rostlab/prot_t5_xl_uniref50/commits/main "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Rostlab/prot_t5_xl_uniref50/discussions?p=0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Rostlab/prot_t5_xl_uniref50/commits/refs%2Fpr%2F1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Rostlab/prot_t5_xl_uniref50/resolve/refs%2Fpr%2F1/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Rostlab/prot_t5_xl_uniref50/resolve/refs%2Fpr%2F1/model.safetensors "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Rostlab/prot_t5_xl_uniref50/xet-read-token/ecd1cb1a104eb6cec3fe0a04055ba6fbe2634b26 "HTTP/1.1 200 OK"
+Exception in thread Thread-auto_conversion:
+Traceback (most recent call last):
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/threading.py", line 1081, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/threading.py", line 1023, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/safetensors_conversion.py", line 117, in auto_conversion
+    raise e
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/safetensors_conversion.py", line 113, in auto_conversion
+    resolved_archive_file = cached_file(pretrained_model_name_or_path, filename, **cached_file_kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/utils/hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/utils/hub.py", line 512, in cached_files
+    raise e
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/utils/hub.py", line 422, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/file_download.py", line 986, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/file_download.py", line 1202, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        incomplete_path=Path(blob_path + ".incomplete"),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/file_download.py", line 1812, in _download_to_tmp_and_move
+    with incomplete_path.open("ab") as f:
+         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+OSError: [Errno 122] Disk quota exceeded
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]Loading weights: 100%|██████████| 196/196 [00:00<00:00, 58407.36it/s]
+[1mT5EncoderModel LOAD REPORT[0m from: Rostlab/prot_t5_xl_uniref50
+Key            | Status     |  | 
+---------------+------------+--+-
+lm_head.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Rostlab/prot_t5_xl_uniref50/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Rostlab/prot_t5_xl_uniref50/973be27c52ee6474de9c945952a8008aeb2a1a73/tokenizer_config.json "HTTP/1.1 200 OK"
+Traceback (most recent call last):
+  File "/scratch/users/khoang99/repos/BioSeqFeat/dgeb/run_evaluation.py", line 63, in <module>
+    main()
+    ~~~~^^
+  File "/scratch/users/khoang99/repos/BioSeqFeat/dgeb/run_evaluation.py", line 50, in main
+    all_results[model_name] = run_hf_model(model_name)
+                              ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/scratch/users/khoang99/repos/BioSeqFeat/dgeb/run_evaluation.py", line 15, in run_hf_model
+    model = dgeb.get_model(model_name)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/dgeb.py", line 80, in get_model
+    return cls(model_name, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 71, in __init__
+    self.tokenizer = self._get_tokenizer(model_name)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/dgeb/models.py", line 317, in _get_tokenizer
+    return T5Tokenizer.from_pretrained(model_name, do_lower_case=False)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/tokenization_utils_base.py", line 1620, in from_pretrained
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<10 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/utils/hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/utils/hub.py", line 512, in cached_files
+    raise e
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/transformers/utils/hub.py", line 422, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/file_download.py", line 986, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/file_download.py", line 1202, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        incomplete_path=Path(blob_path + ".incomplete"),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/huggingface_hub/file_download.py", line 1812, in _download_to_tmp_and_move
+    with incomplete_path.open("ab") as f:
+         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/pathlib/__init__.py", line 776, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 122] Disk quota exceeded: '/home/users/khoang99/.cache/huggingface/hub/models--Rostlab--prot_t5_xl_uniref50/blobs/57f1746bbcd1842e6a2a4d8c948d309e8d09ecde.incomplete'
+[W327 15:13:23.213475714 CudaIPCTypes.cpp:16] Producer process has been terminated before all shared CUDA tensors released. See Note [Sharing CUDA tensors]

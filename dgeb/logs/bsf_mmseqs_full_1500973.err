@@ -1,0 +1,14 @@
+INFO:dgeb.dgeb:
+
+********************** Evaluating RpoB Bacterial Phylogeny **********************
+Using the latest cached version of the dataset since tattabio/rpob_bac_phylogeny_sequences couldn't be found on the Hugging Face Hub (offline mode is enabled).
+WARNING:datasets.load:Using the latest cached version of the dataset since tattabio/rpob_bac_phylogeny_sequences couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /scratch/users/khoang99/hf_cache/datasets/tattabio___rpob_bac_phylogeny_sequences/default/0.0.0/b833ef8d8d873ea5387540562873f41d073d3e03 (last modified on Fri Mar 27 15:20:12 2026).
+WARNING:datasets.packaged_modules.cache.cache:Found the latest cached dataset configuration 'default' at /scratch/users/khoang99/hf_cache/datasets/tattabio___rpob_bac_phylogeny_sequences/default/0.0.0/b833ef8d8d873ea5387540562873f41d073d3e03 (last modified on Fri Mar 27 15:20:12 2026).
+Using the latest cached version of the dataset since tattabio/rpob_bac_phylogeny_distances couldn't be found on the Hugging Face Hub (offline mode is enabled).
+WARNING:datasets.load:Using the latest cached version of the dataset since tattabio/rpob_bac_phylogeny_distances couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /scratch/users/khoang99/hf_cache/datasets/tattabio___rpob_bac_phylogeny_distances/default/0.0.0/0594e1501ac9fd0e3de49257b8ec318c2a0ea6f7 (last modified on Fri Mar 27 15:20:14 2026).
+WARNING:datasets.packaged_modules.cache.cache:Found the latest cached dataset configuration 'default' at /scratch/users/khoang99/hf_cache/datasets/tattabio___rpob_bac_phylogeny_distances/default/0.0.0/0594e1501ac9fd0e3de49257b8ec318c2a0ea6f7 (last modified on Fri Mar 27 15:20:14 2026).
+encoding:   0%|          | 0/3 [00:00<?, ?it/s]/scratch/users/khoang99/bios270/envs/micromamba/envs/dgeb_env/lib/python3.14/site-packages/torch/utils/data/dataloader.py:775: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+[2026-03-28T19:07:03.282] error: *** JOB 1500973 ON wheat-01 CANCELLED AT 2026-03-28T19:07:03 DUE to SIGNAL Terminated ***
